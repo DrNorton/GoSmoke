@@ -14,6 +14,10 @@
            <TextBlock Text="Введите телефон:"/>
             <TextBox Text="{Binding Phone,Mode=TwoWay}"/>
             <Button Content="Далее" Command="{Binding TryLoginCommand}"/>
+            <Button Content="Регистрация через ВК" Command="{Binding VkRegisterCommand}"/>
 </StackPanel>
+        <WebView NavigationStarting="Vk_OnNavigationStarting" Visibility="{Binding BrowserVisibility,Mode=TwoWay}" Source="{Binding BrowserUri,Mode=TwoWay}"   x:Name="Vk">
+            
+        </WebView>
     </Grid>
 </views:MvxWindowsPage>

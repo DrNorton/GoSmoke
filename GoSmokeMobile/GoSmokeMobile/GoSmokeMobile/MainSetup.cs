@@ -20,11 +20,11 @@ namespace GoSmokeMobileUniversal
         
         
             RegisterAppStart<EnterPhoneAuthViewModel>();
-            
+            Mvx.RegisterType<IUserDataService, UserDataService>();
             Mvx.RegisterType<IApiSettings,ApiSettings>();
             Mvx.RegisterType<IApiExecuter, ApiExecuter>();
             Mvx.RegisterType<IApiFacade, ApiFacade>();
-            Mvx.RegisterType<IUserDataService, UserDataService>();
+           
             //Mvx.ConstructAndRegisterSingleton<IApiManager, ApiManager>();
         }
     }

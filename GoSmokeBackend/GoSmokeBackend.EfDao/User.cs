@@ -20,6 +20,7 @@ namespace GoSmokeBackend.EfDao
         public System.DateTime DateRegister { get; set; }
         public string SecurityStamp { get; set; }
         public bool Confirm { get; set; }
+        public long VkId { get; set; }
     
         public virtual Profile Profile { get; set; }
     }

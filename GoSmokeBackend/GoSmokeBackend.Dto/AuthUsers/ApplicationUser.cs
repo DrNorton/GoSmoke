@@ -9,5 +9,7 @@ namespace GoSmokeBackend.Dto.AuthUsers
         public string PasswordHash { get; set; }
         public string SecurityStamp { get; set; }
         public bool ConfirmPhone { get; set; }
+
+        public long VkId { get; set; }
     }
 }

@@ -56,7 +56,7 @@ namespace GoSmokeBackend.EfDao.Repositories
                 return null;
             }
 
-            return new ApplicationUser() { Id = user.Id, PasswordHash = user.Password, UserName = user.Phone};
+            return new ApplicationUser() { Id = user.Id, PasswordHash = user.Password, UserName = user.Phone,VkId = user.VkId};
         }
 
 
@@ -69,7 +69,18 @@ namespace GoSmokeBackend.EfDao.Repositories
             {
                 return null;
             }
-            return new ApplicationUser() { Id = user.Id, PasswordHash = user.Password, UserName = user.Phone };
+            return new ApplicationUser() { Id = user.Id, PasswordHash = user.Password, UserName = user.Phone, VkId = user.VkId };
+        }
+
+
+        public async Task<ApplicationUser> FindByVkId(long vkId)
+        {
+            var user = Db.Set<User>().FirstOrDefault(x => x.VkId == vkId);
+            if (user == null)
+            {
+                return null;
+            }
+            return new ApplicationUser() { Id = user.Id, PasswordHash = user.Password, UserName = user.Phone, VkId = user.VkId };
         }
     }
 }

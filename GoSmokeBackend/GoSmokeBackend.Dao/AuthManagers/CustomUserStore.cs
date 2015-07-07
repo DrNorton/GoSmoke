@@ -39,6 +39,11 @@ namespace GoSmokeBackend.Dao.AuthManagers
             return  _repository.FindUser(userName, "");
         }
 
+        public Task<ApplicationUser> FindByVkIdAsync(long vkId)
+        {
+            return _repository.FindByVkId(vkId);
+        }
+
         public Task UpdateAsync(ApplicationUser user)
         {
             return _repository.UpdateUser(user);

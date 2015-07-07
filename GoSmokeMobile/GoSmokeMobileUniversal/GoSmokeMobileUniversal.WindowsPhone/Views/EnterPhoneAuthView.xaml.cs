@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -27,7 +29,22 @@ namespace GoSmokeMobileUniversal.Views
         public EnterPhoneAuthView()
         {
             this.InitializeComponent();
+          
         }
 
+        private void Vk_OnNavigationStarting(WebView sender, WebViewNavigationStartingEventArgs args)
+        {
+            if (args.Uri.ToString().ToLower().Contains("expires_in"))
+            {
+                var url = new Windows.Foundation.WwwFormUrlDecoder(args.Uri.ToString());
+                var token=url[0].Value;
+                Debug.WriteLine(url[0]);
+               
+                var context = (this.DataContext as EnterPhoneAuthViewModel);
+                context.OnReceiveToken(token);
+
+            }
+            
+        }
     }
 }

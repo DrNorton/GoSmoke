@@ -8,7 +8,7 @@ namespace GoSmokeMobile.Api.Models.Dtos
 {
     public class ProfileDto
     {
-        public string Token { get; set; }
+        public Token Token { get; set; }
 
         public string FirstName { get; set; }
         public string LastName { get; set; }

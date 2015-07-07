@@ -62,4 +62,7 @@
     <Build Include="Users.sql" />
     <Build Include="Profiles.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="GoSmokeDb.refactorlog" />
+  </ItemGroup>
 </Project>

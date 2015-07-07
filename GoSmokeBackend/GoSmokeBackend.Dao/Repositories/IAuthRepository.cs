@@ -12,5 +12,6 @@ namespace GoSmokeBackend.Dao.Repositories
         Task<ApplicationUser> FindUser(long id);
 
         Task UpdateUser(ApplicationUser appUser);
+        Task<ApplicationUser> FindByVkId(long vkId);
     }
 }

@@ -5,6 +5,6 @@
     [DateRegister]  DATETIME       NOT NULL,
     [SecurityStamp] NVARCHAR (200) NULL,
     [Confirm]       BIT            DEFAULT ((0)) NOT NULL,
-    [IsVkLink] BIT NOT NULL DEFAULT 0, 
+    [VkId] BIGINT NOT NULL DEFAULT 0, 
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );

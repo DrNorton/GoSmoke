@@ -10,9 +10,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel>
-        <TextBox Text="{Binding Profile.Token}"/>
+        <TextBlock Text="Токен"/>
+        <TextBox Text="{Binding Profile.Token.Value}"/>
+        <TextBlock Text="Имя"/>
         <TextBox Text="{Binding Profile.FirstName}"/>
+        <TextBlock Text="Фимилия"/>
         <TextBox Text="{Binding Profile.LastName}"/>
+        <TextBlock Text="Днюшка"/>
         <TextBox Text="{Binding Profile.Birthday}"/>
     </StackPanel>
 </views:MvxWindowsPage>

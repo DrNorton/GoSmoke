@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="GoSmokeEfContext.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="GoSmokeEfContext.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Profiles">
           <Key>
             <PropertyRef Name="Id" />
@@ -28,6 +28,7 @@
           <Property Name="DateRegister" Type="datetime" Nullable="false" />
           <Property Name="SecurityStamp" Type="nvarchar" MaxLength="200" />
           <Property Name="Confirm" Type="bit" Nullable="false" />
+          <Property Name="VkId" Type="bigint" Nullable="false" />
         </EntityType>
         <Association Name="FK_Profiles_USERS">
           <End Role="Users" Type="Self.Users" Multiplicity="1" />
@@ -49,8 +50,7 @@
             <End Role="Profiles" EntitySet="Profiles" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="GoSmokeEfContext" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -79,6 +79,7 @@
           <Property Name="SecurityStamp" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="Confirm" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Profile" Relationship="Self.FK_Profiles_USERS" FromRole="Users" ToRole="Profiles" />
+          <Property Name="VkId" Type="Int64" Nullable="false" />
         </EntityType>
         <Association Name="FK_Profiles_USERS">
           <End Role="Users" Type="Self.User" Multiplicity="1" />
@@ -123,6 +124,7 @@
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="GoSmokeEfContext.User">
               <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="VkId" ColumnName="VkId" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="Password" ColumnName="Password" />

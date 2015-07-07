@@ -1,11 +1,19 @@
 ﻿using GoSmokeMobile.Api;
 using GoSmokeMobile.Api.Models;
+using GoSmokeMobile.Services;
 
 namespace GoSmokeMobileUniversal
 {
     public class ApiSettings:IApiSettings
     {
-        private Token _token;
+        private readonly IUserDataService _userDataService;
+
+
+        public ApiSettings(IUserDataService userDataService)
+        {
+            _userDataService = userDataService;
+      
+        }
 
         public string BaseUrl
         {
@@ -13,8 +21,22 @@ namespace GoSmokeMobileUniversal
         }
         public Token SavedToken
         {
-            get { return _token; }
-            set { _token = value; }
+            get
+            {
+                if (_userDataService.Profile == null)
+                {
+                    return null;
+                }
+                return _userDataService.Profile.Token;
+            }
+            set
+            {
+                if (_userDataService.Profile != null)
+                {
+                    _userDataService.Profile.Token = value; 
+                }
+                
+            }
         }
     }
 }

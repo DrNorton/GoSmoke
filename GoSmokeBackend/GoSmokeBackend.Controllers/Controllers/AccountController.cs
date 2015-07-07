@@ -11,8 +11,13 @@ using GoSmokeBackend.Dao.AuthManagers;
 using GoSmokeBackend.Dao.Repositories;
 using GoSmokeBackend.Dto.AuthUsers;
 using GoSmokeBackend.Dto.Dtos;
+using GoSmokeBackend.EfDao;
 using Microsoft.AspNet.Identity;
+using Newtonsoft.Json;
 using Thinktecture.IdentityModel.Client;
+using VkNet;
+using VkNet.Enums.Filters;
+using System.Text;
 
 namespace GoSmokeBackend.Controllers.Controllers
 {
@@ -98,25 +103,43 @@ namespace GoSmokeBackend.Controllers.Controllers
         [System.Web.Http.HttpPost]
         public async Task<IHttpActionResult> GetProfile(AuthModel authModel)
         {
-            //oauth
-            var oauthData = await GetToken(authModel.Login, authModel.Password);
-            if (oauthData.IsError)
+            if (!String.IsNullOrEmpty(authModel.SocialToken))
             {
-                return ErrorApiResult(401, oauthData.Error);
+                //Значит авторизация через контактик
+                var webClient = new WebClient();
+                webClient.Encoding = Encoding.UTF8;
+               var response=await webClient.DownloadStringTaskAsync(new Uri(String.Format("{0}{1}", @"https://api.vk.com/method/users.get?access_token=", authModel.SocialToken)));
+                var vkResponse = JsonConvert.DeserializeObject<VkUserGet>(response);
+         
+                //берём id из социалочки
+                var findedUser=(_userManager as CustomUserManager).FindByIdAsync(vkResponse.response.FirstOrDefault().uid);
+                return EmptyApiResult();
             }
-
-            
-            var findedUser = await _userManager.FindByNameAsync(authModel.Login);
-            var profile = await _profileRepository.GetProfile(findedUser.Id);
-            
-
-            return SuccessApiResult(new ProfileResponse()
+            else
             {
-                Token = oauthData.AccessToken,
-                FirstName = profile.FirstName,
-                LastName = profile.LastName,
-                Birthday = profile.Birthday
-            });
+                //Входит стандартно через логин пасс
+                var oauthData = await GetToken(authModel.Login, authModel.Password);
+                if (oauthData.IsError)
+                {
+                    return ErrorApiResult(401, oauthData.Error);
+                }
+                //oauth
+
+                var findedUser = await _userManager.FindByNameAsync(authModel.Login);
+                var profile = await _profileRepository.GetProfile(findedUser.Id);
+                return SuccessApiResult(new ProfileResponse()
+                {
+                    Token = new Token(){ExpiredIn = oauthData.ExpiresIn,TokenType = oauthData.TokenType,Value = oauthData.AccessToken},
+                    FirstName = profile.FirstName,
+                    LastName = profile.LastName,
+                    Birthday = profile.Birthday
+                });
+
+            }
+         
+            
+
+            
             
         }
 

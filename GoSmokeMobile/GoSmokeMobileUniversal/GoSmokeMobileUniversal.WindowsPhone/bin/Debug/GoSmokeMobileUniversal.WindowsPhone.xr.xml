@@ -3,6 +3,9 @@
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="AuthCommand" />
     <RootPropertyPathName Name="Password" />
+    <RootPropertyPathName Name="BrowserVisibility" />
+    <RootPropertyPathName Name="BrowserUri" />
+    <RootPropertyPathName Name="VkRegisterCommand" />
     <RootPropertyPathName Name="TryLoginCommand" />
     <RootPropertyPathName Name="Phone" />
     <RootPropertyPathName Name="Profile" />
@@ -10,6 +13,7 @@
     <RootPropertyPathName Name="LastName" />
     <RootPropertyPathName Name="FirstName" />
     <RootPropertyPathName Name="Token" />
+    <RootPropertyPathName Name="Value" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
@@ -40,6 +44,11 @@
       <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="GoSmokeMobileUniversal.Views.EnterPasswordView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.WebView">
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Source" />
+      <RootEvent Name="NavigationStarting" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Text" />
     </RootType>
