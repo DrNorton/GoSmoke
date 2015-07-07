@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSmokeBackend", "GoSmokeBackend\GoSmokeBackend.csproj", "{CB8CDBAB-F291-48B1-AE14-5365CD80C3D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSmokeBackend.Controllers", "GoSmokeBackend.Controllers\GoSmokeBackend.Controllers.csproj", "{8BED98DB-4F4A-4A35-9BA2-6EDBE7A83744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSmokeBackend.Dao", "GoSmokeBackend.Dao\GoSmokeBackend.Dao.csproj", "{4B81212B-77F8-4CA3-8ADB-A8C3BDECF345}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSmokeBackend.Dto", "GoSmokeBackend.Dto\GoSmokeBackend.Dto.csproj", "{5FADB751-96A1-4867-9677-BDE832D5837B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSmokeBackend.EfDao", "GoSmokeBackend.EfDao\GoSmokeBackend.EfDao.csproj", "{D6AB196C-15F9-4802-BDF8-B1EFCA14F084}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{0AD73A3B-B0A8-4E14-81DE-7693ED45074E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSmokeBackend.Dependencies", "GoSmokeBackend.Dependencies\GoSmokeBackend.Dependencies.csproj", "{E7F29EF5-710A-4E33-B38C-9CEAD795B49A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C50AC2A4-8362-4567-94C9-077FF14D5FDF}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB8CDBAB-F291-48B1-AE14-5365CD80C3D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB8CDBAB-F291-48B1-AE14-5365CD80C3D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB8CDBAB-F291-48B1-AE14-5365CD80C3D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB8CDBAB-F291-48B1-AE14-5365CD80C3D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BED98DB-4F4A-4A35-9BA2-6EDBE7A83744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BED98DB-4F4A-4A35-9BA2-6EDBE7A83744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BED98DB-4F4A-4A35-9BA2-6EDBE7A83744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BED98DB-4F4A-4A35-9BA2-6EDBE7A83744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B81212B-77F8-4CA3-8ADB-A8C3BDECF345}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B81212B-77F8-4CA3-8ADB-A8C3BDECF345}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B81212B-77F8-4CA3-8ADB-A8C3BDECF345}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B81212B-77F8-4CA3-8ADB-A8C3BDECF345}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FADB751-96A1-4867-9677-BDE832D5837B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FADB751-96A1-4867-9677-BDE832D5837B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FADB751-96A1-4867-9677-BDE832D5837B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FADB751-96A1-4867-9677-BDE832D5837B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6AB196C-15F9-4802-BDF8-B1EFCA14F084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6AB196C-15F9-4802-BDF8-B1EFCA14F084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6AB196C-15F9-4802-BDF8-B1EFCA14F084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6AB196C-15F9-4802-BDF8-B1EFCA14F084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7F29EF5-710A-4E33-B38C-9CEAD795B49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7F29EF5-710A-4E33-B38C-9CEAD795B49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7F29EF5-710A-4E33-B38C-9CEAD795B49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7F29EF5-710A-4E33-B38C-9CEAD795B49A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E7F29EF5-710A-4E33-B38C-9CEAD795B49A} = {0AD73A3B-B0A8-4E14-81DE-7693ED45074E}
+	EndGlobalSection
+EndGlobal
