@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Users] (
+    [Id]            BIGINT         IDENTITY (1, 1) NOT NULL,
+    [Phone]         NVARCHAR (12)  NOT NULL,
+    [Password]      NVARCHAR (300) NULL,
+    [DateRegister]  DATETIME       NOT NULL,
+    [SecurityStamp] NVARCHAR (200) NULL,
+    [Confirm]       BIT            DEFAULT ((0)) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
