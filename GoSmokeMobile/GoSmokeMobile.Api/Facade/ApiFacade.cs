@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using GoSmokeMobile.Api.ExceptionRouter;
 using GoSmokeMobile.Api.Executer;
 using GoSmokeMobile.Api.Models;
+using GoSmokeMobile.Api.Models.Dtos;
 using GoSmokeMobile.Api.Requests;
 using GoSmokeMobile.Api.Requests.Base;
 
@@ -22,6 +23,21 @@ namespace GoSmokeMobile.Api.Facade
    
         }
 
+        public Task<IsRegisteredDto> TryAuth(string phone)
+        {
+            var tryAuthRequest = new TryAuthRequest(phone);
+            tryAuthRequest.BaseUrl = _apiSettings.BaseUrl;
+            return ExecuteWithErrorHandling<IsRegisteredDto>(tryAuthRequest);
+        }
+
+        public Task<ProfileDto> AuthAndGetProfile(string phone,string password)
+        {
+            var authWithGetProfileRequest = new AuthWithGetProfileRequest(phone, password);
+            authWithGetProfileRequest.BaseUrl = _apiSettings.BaseUrl;
+            return ExecuteWithErrorHandling<ProfileDto>(authWithGetProfileRequest);
+        }
+
+       
      
 
         

@@ -1,13 +1,18 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using GoSmokeBackend.Controllers.ApiResults;
 using GoSmokeBackend.Controllers.Models;
 using GoSmokeBackend.Dao.AuthManagers;
+using GoSmokeBackend.Dao.Repositories;
 using GoSmokeBackend.Dto.AuthUsers;
+using GoSmokeBackend.Dto.Dtos;
 using Microsoft.AspNet.Identity;
+using Thinktecture.IdentityModel.Client;
 
 namespace GoSmokeBackend.Controllers.Controllers
 {
@@ -16,17 +21,19 @@ namespace GoSmokeBackend.Controllers.Controllers
     public class AccountController : CustomApiController
     {
         private readonly CustomUserManager _userManager;
+        private readonly IProfileRepository _profileRepository;
 
-        public AccountController(CustomUserManager userManager)
+        public AccountController(CustomUserManager userManager,IProfileRepository profileRepository)
         {
             _userManager = userManager;
+            _profileRepository = profileRepository;
         }
 
         // POST api/Account/Register
         [System.Web.Http.AllowAnonymous]
         [System.Web.Http.Route("Register")]
         [System.Web.Http.HttpPost]
-        public async Task<IHttpActionResult> Register(UserModel userModel)
+        public async Task<IHttpActionResult> Register(PhoneModel phoneModel)
         {
             if (!ModelState.IsValid)
             {
@@ -37,7 +44,7 @@ namespace GoSmokeBackend.Controllers.Controllers
 
             var user = new ApplicationUser()
             {
-                UserName = userModel.Phone,
+                UserName = phoneModel.Phone,
             };
             var password = await _userManager.GeneratePassword();
             
@@ -64,6 +71,63 @@ namespace GoSmokeBackend.Controllers.Controllers
             }
 
         }
+
+        [System.Web.Http.AllowAnonymous]
+        [System.Web.Http.Route("tryauth")]
+        [System.Web.Http.HttpPost]
+        public async Task<IHttpActionResult> TryAuth(PhoneModel phoneModel)
+        {
+
+
+            var findedUser=await _userManager.FindByNameAsync(phoneModel.Phone);
+      
+            if (findedUser == null)
+            {
+                await Register(phoneModel);
+                return SuccessApiResult(new {Registered = false});
+            }
+            else
+            {
+                return SuccessApiResult(new { Registered = true });
+            }
+        }
+
+
+        [System.Web.Http.AllowAnonymous]
+        [System.Web.Http.Route("getprofile")]
+        [System.Web.Http.HttpPost]
+        public async Task<IHttpActionResult> GetProfile(AuthModel authModel)
+        {
+            //oauth
+            var oauthData = await GetToken(authModel.Login, authModel.Password);
+            if (oauthData.IsError)
+            {
+                return ErrorApiResult(401, oauthData.Error);
+            }
+
+            
+            var findedUser = await _userManager.FindByNameAsync(authModel.Login);
+            var profile = await _profileRepository.GetProfile(findedUser.Id);
+            
+
+            return SuccessApiResult(new ProfileResponse()
+            {
+                Token = oauthData.AccessToken,
+                FirstName = profile.FirstName,
+                LastName = profile.LastName,
+                Birthday = profile.Birthday
+            });
+            
+        }
+
+        private async Task<TokenResponse> GetToken(string login,string password)
+        {
+            var host = base.ActionContext.Request.RequestUri.ToString().Replace("/account/getprofile", "") + "/token";
+            var client = new OAuth2Client(new Uri(host));
+            var oauthData = await client.RequestResourceOwnerPasswordAsync(login, password);
+            return oauthData;
+        }
+
 
         [System.Web.Http.Authorize]
         [System.Web.Http.Route("GetOrders")]
@@ -109,15 +173,6 @@ namespace GoSmokeBackend.Controllers.Controllers
 
         }
 
-        [System.Web.Http.Authorize]
-        [System.Web.Http.Route("Test")]
-        [System.Web.Http.HttpPost]
-        public async Task<IHttpActionResult> Test()
-        {
-            var userId = long.Parse(User.Identity.GetUserId());
-            await _userManager.SendSmsAsync(userId, "hallo");
-            return EmptyApiResult();
-        }
 
         [System.Web.Http.Route("RecoverPassword")]
         [System.Web.Http.HttpPost]

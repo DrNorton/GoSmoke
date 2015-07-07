@@ -4,6 +4,11 @@ using System.Text;
 using Cirrious.CrossCore;
 using Cirrious.CrossCore.IoC;
 using Cirrious.MvvmCross.ViewModels;
+using GoSmokeMobile;
+using GoSmokeMobile.Api;
+using GoSmokeMobile.Api.Executer;
+using GoSmokeMobile.Api.Facade;
+using GoSmokeMobile.Services;
 using GoSmokeMobileUniversal.ViewModels;
 
 namespace GoSmokeMobileUniversal
@@ -12,15 +17,14 @@ namespace GoSmokeMobileUniversal
     {
         public override void Initialize()
         {
-            CreatableTypes()
-                .EndingWith("Service")
-                .AsInterfaces()
-                .RegisterAsLazySingleton();
         
-            RegisterAppStart<MainViewModel>();
-            // _apiExecuter = new ApiExecuter("http://hskingapi.azurewebsites.net/api");
-
-            //Mvx.RegisterType<IRequestExecuterService, RequestExecuterService>();
+        
+            RegisterAppStart<EnterPhoneAuthViewModel>();
+            
+            Mvx.RegisterType<IApiSettings,ApiSettings>();
+            Mvx.RegisterType<IApiExecuter, ApiExecuter>();
+            Mvx.RegisterType<IApiFacade, ApiFacade>();
+            Mvx.RegisterType<IUserDataService, UserDataService>();
             //Mvx.ConstructAndRegisterSingleton<IApiManager, ApiManager>();
         }
     }

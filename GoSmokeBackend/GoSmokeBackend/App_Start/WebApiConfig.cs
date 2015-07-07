@@ -24,6 +24,8 @@ namespace GoSmokeBackend
                 defaults: new { id = RouteParameter.Optional }
             );
 
+
+
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
             config.Formatters.JsonFormatter.SerializerSettings.Converters.Add(new IsoDateTimeConverter());

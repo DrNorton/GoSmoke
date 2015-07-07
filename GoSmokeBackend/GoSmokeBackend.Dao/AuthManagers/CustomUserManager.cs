@@ -34,6 +34,8 @@ namespace GoSmokeBackend.Dao.AuthManagers
             return taskInvoke;
         }
 
+      
+
         public Task<string> GeneratePassword()
         {
             var generator = new Random();

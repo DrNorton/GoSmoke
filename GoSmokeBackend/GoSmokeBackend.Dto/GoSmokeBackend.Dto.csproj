@@ -54,6 +54,7 @@
     <Compile Include="AuthUsers\ApplicationUser.cs" />
     <Compile Include="Dtos\DeviceDto.cs" />
     <Compile Include="Dtos\ProfileDto.cs" />
+    <Compile Include="Dtos\ProfileResponse.cs" />
     <Compile Include="Dtos\RegisterPushDto.cs" />
     <Compile Include="Dtos\SentPushDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

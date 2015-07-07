@@ -1,5 +1,5 @@
 ﻿<views:MvxWindowsPage
-    x:Class="GoSmokeMobileUniversal.Views.MainView"
+    x:Class="GoSmokeMobileUniversal.Views.EnterPhoneAuthView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GoSmokeMobileUniversal.Views"
