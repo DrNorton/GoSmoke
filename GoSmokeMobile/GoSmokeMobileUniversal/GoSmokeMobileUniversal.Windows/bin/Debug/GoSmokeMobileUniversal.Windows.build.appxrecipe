@@ -8,105 +8,77 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>db3fd7ad-eb59-455e-a0b2-68093bfa9068</PackageIdentityName>
     <IntermediateOutputPath>E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.Windows\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>3D80F7033CD8988F6C282B639BD0F6457283A0D67E6C1CDC86526CAE29A3E60B</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>db3fd7ad-eb59-455e-a0b2-68093bfa9068_1.0.0.0_neutral__jm2hy1hjwtaet</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>db3fd7ad-eb59-455e-a0b2-68093bfa9068_jm2hy1hjwtaet!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>db3fd7ad-eb59-455e-a0b2-68093bfa9068</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Андрей</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
-    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-08T13:59:18.123</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.Windows\bin\Debug\GoSmokeMobileUniversal.Windows.exe">
       <PackagePath>GoSmokeMobileUniversal.Windows.exe</PackagePath>
-      <Modified>2015-07-08T14:00:07.454</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\win81\Cirrious.CrossCore.dll">
       <PackagePath>Cirrious.CrossCore.dll</PackagePath>
-      <Modified>2015-07-07T15:37:24.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\win81\Cirrious.CrossCore.WindowsCommon.dll">
       <PackagePath>Cirrious.CrossCore.WindowsCommon.dll</PackagePath>
-      <Modified>2015-07-07T15:37:24.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.1\lib\win81\Cirrious.MvvmCross.dll">
       <PackagePath>Cirrious.MvvmCross.dll</PackagePath>
-      <Modified>2015-07-07T15:37:24.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\win81\Cirrious.MvvmCross.Localization.dll">
       <PackagePath>Cirrious.MvvmCross.Localization.dll</PackagePath>
-      <Modified>2015-07-07T15:37:24.618</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.1\lib\win81\Cirrious.MvvmCross.WindowsCommon.dll">
       <PackagePath>Cirrious.MvvmCross.WindowsCommon.dll</PackagePath>
-      <Modified>2015-07-07T15:37:24.927</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobile.Api\bin\Debug\GoSmokeMobile.Api.dll">
       <PackagePath>GoSmokeMobile.Api.dll</PackagePath>
-      <Modified>2015-07-08T13:58:50.232</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobile.Api\bin\Debug\RestSharp.Portable.dll">
       <PackagePath>RestSharp.Portable.dll</PackagePath>
-      <Modified>2015-07-07T14:51:42.570</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobile.Api\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2015-07-07T14:51:42.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobile.Api\bin\Debug\Microsoft.Threading.Tasks.dll">
       <PackagePath>Microsoft.Threading.Tasks.dll</PackagePath>
-      <Modified>2015-07-07T14:54:32.821</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobile.Api\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll">
       <PackagePath>Microsoft.Threading.Tasks.Extensions.dll</PackagePath>
-      <Modified>2015-07-07T14:54:32.829</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-07T10:22:12.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-07T10:22:12.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-07T10:22:12.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-07T10:22:12.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.Windows\ToDo-MvvmCross\_ Windows Store UI.txt">
       <PackagePath>ToDo-MvvmCross\_ Windows Store UI.txt</PackagePath>
-      <Modified>2015-07-07T15:40:04.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-07-08T13:59:16.314</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.Windows\bin\Debug\Views\MainView.xbf">
       <PackagePath>Views\MainView.xbf</PackagePath>
-      <Modified>2015-07-08T14:00:07.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.Windows\bin\Debug\GoSmokeMobileUniversal.Windows.xr.xml">
       <PackagePath>GoSmokeMobileUniversal.Windows.xr.xml</PackagePath>
-      <Modified>2015-07-08T14:00:07.192</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-07-08T13:59:17.343</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

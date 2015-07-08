@@ -12,8 +12,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainSetup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\UserDataService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Base\LoadingScreen.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EnterPasswordViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EnterPhoneAuthViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PersonalViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainViewModel.cs" />
   </ItemGroup>
 </Project>

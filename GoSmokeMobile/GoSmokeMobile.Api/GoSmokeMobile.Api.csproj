@@ -46,14 +46,14 @@
     <Compile Include="IApiSettings.cs" />
     <Compile Include="Models\ApiResponse.cs" />
     <Compile Include="Models\Base\DictionaryExtension.cs" />
-    <Compile Include="Models\Dtos\IsRegisteredDto.cs" />
-    <Compile Include="Models\Dtos\ProfileDto.cs" />
     <Compile Include="Models\Token.cs" />
+    <Compile Include="Models\TokenResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Requests\AuthWithGetProfileRequest.cs" />
+    <Compile Include="Requests\AuthRequest.cs" />
     <Compile Include="Requests\Base\BaseParamRequest.cs" />
     <Compile Include="Requests\Base\IRequest.cs" />
-    <Compile Include="Requests\TryAuthRequest.cs" />
+    <Compile Include="Requests\RegisterRequest.cs" />
+    <Compile Include="Response\EmptyResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -84,6 +84,9 @@
       <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\portable-net45+win8+wpa81\System.Net.Http.Primitives.dll</HintPath>
       <Private>True</Private>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Dtos\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

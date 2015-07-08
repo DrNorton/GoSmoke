@@ -8,21 +8,24 @@ using GoSmokeMobile.Api.Requests.Base;
 
 namespace GoSmokeMobile.Api.Requests
 {
-    public class TryAuthRequest:BaseParamRequest
+    public class AuthRequest:BaseParamRequest
     {
+
         public override string Controller
         {
-            get { return "account"; }
+            get { return "token"; }
         }
 
         public override string MethodName
         {
-            get { return "tryauth"; }
+            get { return ""; }
         }
 
-        public TryAuthRequest(string phone)
+        public AuthRequest(string phone,string password)
         {
-            base.Params.Add("Phone",phone);
+            base.Params.Add("grant_type", "password");
+            base.Params.Add("userName", phone);
+            base.Params.Add("password", password);
             base.Type=HttpMethod.Post;
         }
     }

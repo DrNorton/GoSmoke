@@ -19,22 +19,12 @@ namespace GoSmokeMobileUniversal
         {
             get { return "http://localhost:54680/api"; }
         }
-        public Token SavedToken
+        public Token Token
         {
-            get
-            {
-                if (_userDataService.Profile == null)
-                {
-                    return null;
-                }
-                return _userDataService.Profile.Token;
-            }
+            get { return null; }
             set
             {
-                if (_userDataService.Profile != null)
-                {
-                    _userDataService.Profile.Token = value; 
-                }
+               
                 
             }
         }

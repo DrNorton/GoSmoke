@@ -21,12 +21,13 @@ namespace GoSmokeMobileUniversal.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class EnterPasswordView : MvxWindowsPage
+    public sealed partial class MainView : MvxWindowsPage
     {
-        public EnterPasswordView()
+        public MainView()
         {
             this.InitializeComponent();
         }
 
+       
     }
 }

@@ -1,100 +1,94 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>ANDREW</Machine>
+    <Machine>WINPHONE</Machine>
     <WindowsUser>Андрей</WindowsUser>
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>cf4163be-f886-49ed-83d7-ad8088237418</PackageIdentityName>
-    <IntermediateOutputPath>E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\GoSmokeMobileUniversal.WindowsPhone.exe">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\GoSmokeMobileUniversal.WindowsPhone.exe">
       <PackagePath>GoSmokeMobileUniversal.WindowsPhone.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\GoSmokeMobileUniversal.WindowsPhone.exe.config">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\GoSmokeMobileUniversal.WindowsPhone.exe.config">
       <PackagePath>GoSmokeMobileUniversal.WindowsPhone.exe.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\wpa81\Cirrious.CrossCore.dll">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\wpa81\Cirrious.CrossCore.dll">
       <PackagePath>Cirrious.CrossCore.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\wpa81\Cirrious.CrossCore.WindowsCommon.dll">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\wpa81\Cirrious.CrossCore.WindowsCommon.dll">
       <PackagePath>Cirrious.CrossCore.WindowsCommon.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.1\lib\wpa81\Cirrious.MvvmCross.dll">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.1\lib\wpa81\Cirrious.MvvmCross.dll">
       <PackagePath>Cirrious.MvvmCross.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\wpa81\Cirrious.MvvmCross.Localization.dll">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\wpa81\Cirrious.MvvmCross.Localization.dll">
       <PackagePath>Cirrious.MvvmCross.Localization.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.1\lib\wpa81\Cirrious.MvvmCross.WindowsCommon.dll">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.1\lib\wpa81\Cirrious.MvvmCross.WindowsCommon.dll">
       <PackagePath>Cirrious.MvvmCross.WindowsCommon.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobile.Api\bin\Debug\GoSmokeMobile.Api.dll">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobile.Api\bin\Debug\GoSmokeMobile.Api.dll">
       <PackagePath>GoSmokeMobile.Api.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobile.Api\bin\Debug\RestSharp.Portable.dll">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobile.Api\bin\Debug\RestSharp.Portable.dll">
       <PackagePath>RestSharp.Portable.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobile.Api\bin\Debug\Microsoft.Threading.Tasks.dll">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobile.Api\bin\Debug\Microsoft.Threading.Tasks.dll">
       <PackagePath>Microsoft.Threading.Tasks.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobile.Api\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobile.Api\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll">
       <PackagePath>Microsoft.Threading.Tasks.Extensions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\ToDo-MvvmCross\_ Windows Store UI.txt">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\ToDo-MvvmCross\_ Windows Store UI.txt">
       <PackagePath>ToDo-MvvmCross\_ Windows Store UI.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\Views\EnterPasswordView.xbf">
-      <PackagePath>Views\EnterPasswordView.xbf</PackagePath>
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\Views\MainView.xbf">
+      <PackagePath>Views\MainView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\Views\EnterPhoneAuthView.xbf">
-      <PackagePath>Views\EnterPhoneAuthView.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\Views\PersonalView.xbf">
-      <PackagePath>Views\PersonalView.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\GoSmokeMobileUniversal.WindowsPhone.xr.xml">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\GoSmokeMobileUniversal.WindowsPhone.xr.xml">
       <PackagePath>GoSmokeMobileUniversal.WindowsPhone.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Projects\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\WORKSPACE\MY PROJECTS\GoSmoke\GoSmokeMobile\GoSmokeMobileUniversal\GoSmokeMobileUniversal.WindowsPhone\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

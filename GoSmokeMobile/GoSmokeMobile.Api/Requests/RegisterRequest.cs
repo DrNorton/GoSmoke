@@ -8,8 +8,9 @@ using GoSmokeMobile.Api.Requests.Base;
 
 namespace GoSmokeMobile.Api.Requests
 {
-    public class AuthWithGetProfileRequest:BaseParamRequest
+    public class RegisterRequest:BaseParamRequest
     {
+
         public override string Controller
         {
             get { return "account"; }
@@ -17,13 +18,12 @@ namespace GoSmokeMobile.Api.Requests
 
         public override string MethodName
         {
-            get { return "getprofile"; }
+            get { return "register"; }
         }
 
-        public AuthWithGetProfileRequest(string phone,string password)
+        public RegisterRequest(string phone)
         {
-            base.Params.Add("Login",phone);
-            base.Params.Add("Password", password);
+            base.Params.Add("phone",phone);
             base.Type=HttpMethod.Post;
         }
     }

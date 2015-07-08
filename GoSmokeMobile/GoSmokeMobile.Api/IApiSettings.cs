@@ -6,8 +6,7 @@ namespace GoSmokeMobile.Api
     {
         string BaseUrl { get; }
 
-      
-        Token SavedToken { get; set; }
+        Token Token { get; set; }
      
     }
 }

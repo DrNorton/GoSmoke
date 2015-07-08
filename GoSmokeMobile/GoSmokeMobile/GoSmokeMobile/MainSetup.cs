@@ -9,6 +9,7 @@ using GoSmokeMobile.Api;
 using GoSmokeMobile.Api.Executer;
 using GoSmokeMobile.Api.Facade;
 using GoSmokeMobile.Services;
+using GoSmokeMobile.ViewModels;
 using GoSmokeMobileUniversal.ViewModels;
 
 namespace GoSmokeMobileUniversal
@@ -19,7 +20,7 @@ namespace GoSmokeMobileUniversal
         {
         
         
-            RegisterAppStart<EnterPhoneAuthViewModel>();
+            RegisterAppStart<MainViewModel>();
             Mvx.RegisterType<IUserDataService, UserDataService>();
             Mvx.RegisterType<IApiSettings,ApiSettings>();
             Mvx.RegisterType<IApiExecuter, ApiExecuter>();

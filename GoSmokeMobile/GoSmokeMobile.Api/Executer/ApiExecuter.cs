@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using GoSmokeMobile.Api.Models;
+using GoSmokeMobile.Api.Requests;
 using GoSmokeMobile.Api.Requests.Base;
 using RestSharp.Portable;
 using RestSharp.Portable.Deserializers;
@@ -20,7 +21,7 @@ namespace GoSmokeMobile.Api.Executer
             
        
         }
-        public async Task<T> Execute<T>(IRequest request)
+        public async Task<ApiResponse<T>> Execute<T>(IRequest request)
         {
             var restClient = new RestSharp.Portable.RestClient();
             restClient.AddHandler("application/json", new JsonDeserializer());
@@ -36,14 +37,7 @@ namespace GoSmokeMobile.Api.Executer
                 var bytes = response.RawBytes;
                 var str = Encoding.UTF8.GetString(bytes, 0, bytes.Length);
                     var data = response.Data;
-                    if (data.ErrorCode == 0)
-                    {
-                        return data.Result;
-                    }
-                    else
-                    {
-                        throw new ApiException(data.ErrorCode, data.ErrorMessage);
-                    }
+                return data;
             }
             catch (Exception e)
             {
@@ -53,6 +47,30 @@ namespace GoSmokeMobile.Api.Executer
          
         }
 
+
+        public async Task<T> ExecuteWithoutApiResponse<T>(IRequest request)
+        {
+            var restClient = new RestSharp.Portable.RestClient();
+           
+            restClient.BaseUrl = new Uri(request.BaseUrl);
+
+
+            var restRequest = CreateRequest(request);
+            foreach (var par in request.Params)
+            {
+                restRequest.AddParameter(par.Key, par.Value);
+            }
+            var uri = restClient.BuildUri(restRequest);
+            Debug.WriteLine(uri);
+         
+                var response = await restClient.Execute<T>(restRequest);
+                var bytes = response.RawBytes;
+                var str = Encoding.UTF8.GetString(bytes, 0, bytes.Length);
+                var data = response.Data;
+                return data;
+
+        }
+
         private RestRequest CreateRequest(IRequest request)
         {
             var restRequest = CreateAndPrepareByUrl(request);
@@ -60,11 +78,21 @@ namespace GoSmokeMobile.Api.Executer
             if (request.Token != null) { restRequest.AddHeader("Authorization", String.Format("{0} {1}", "Bearer", request.Token.Value)); }//добавляем токен
             if (request.Type == HttpMethod.Post)
             {
-                restRequest.AddHeader("Accept", "application/json");
-                if (request.Params != null && request.Params.Any())
+                if (request is AuthRequest)
                 {
-                    restRequest.AddBody(request.Params);
+                    
                 }
+                else
+                {
+                    restRequest.AddHeader("Accept", "application/json");
+                    if (request.Params != null && request.Params.Any())
+                    {
+                        restRequest.AddBody(request.Params);
+                    }
+                }
+
+               
+               
             }
 
             if (request.Type == HttpMethod.Get)

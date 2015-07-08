@@ -1,5 +1,5 @@
 ﻿<views:MvxWindowsPage
-    x:Class="GoSmokeMobileUniversal.Views.PersonalView"
+    x:Class="GoSmokeMobileUniversal.Views.MainView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GoSmokeMobileUniversal.Views"
@@ -9,14 +9,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel>
-        <TextBlock Text="Токен"/>
-        <TextBox Text="{Binding Profile.Token.Value}"/>
-        <TextBlock Text="Имя"/>
-        <TextBox Text="{Binding Profile.FirstName}"/>
-        <TextBlock Text="Фимилия"/>
-        <TextBox Text="{Binding Profile.LastName}"/>
-        <TextBlock Text="Днюшка"/>
-        <TextBox Text="{Binding Profile.Birthday}"/>
-    </StackPanel>
+    <Grid>
+        
+    </Grid>
 </views:MvxWindowsPage>

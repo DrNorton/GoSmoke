@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GoSmokeMobile.Api.Models.Dtos
+namespace GoSmokeMobile.Api.Response
 {
-    public class IsRegisteredDto
+    public class EmptyResult
     {
-        public bool IsRegistered { get; set; }
     }
 }
