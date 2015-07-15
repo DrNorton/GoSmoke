@@ -9,6 +9,7 @@
     <Import_RootNamespace>GoSmokeMobile</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ApiSettings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainSetup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\UserDataService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Base\LoadingScreen.cs" />

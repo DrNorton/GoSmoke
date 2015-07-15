@@ -14,6 +14,7 @@ namespace GoSmokeMobileUniversal
         protected override IMvxApplication CreateApp()
         {
             return new MainSetup();
+            
         }
 		
         protected override IMvxTrace CreateDebugTrace()

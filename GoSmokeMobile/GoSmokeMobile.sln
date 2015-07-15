@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GoSmokeMobile", "GoSmokeMobile\GoSmokeMobile\GoSmokeMobile.shproj", "{F6AE1379-3352-45D4-9C8C-1CD61A28A185}"
 EndProject
@@ -30,11 +30,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{94023F
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Win10", "Win10", "{AA766A60-2617-439E-8694-04D566BA37AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSmokeMobile.Win10", "GoSmokeMobile.Win10\GoSmokeMobile.Win10.csproj", "{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		GoSmokeMobile\GoSmokeMobile\GoSmokeMobile.projitems*{f6ae1379-3352-45d4-9c8c-1cd61a28a185}*SharedItemsImports = 13
 		GoSmokeMobile\GoSmokeMobile\GoSmokeMobile.projitems*{e1bc522a-0dfd-4282-bef5-c10f9550f2f1}*SharedItemsImports = 4
 		GoSmokeMobileUniversal\GoSmokeMobileUniversal.Shared\GoSmokeMobileUniversal.Shared.projitems*{e1bc522a-0dfd-4282-bef5-c10f9550f2f1}*SharedItemsImports = 4
+		GoSmokeMobile\GoSmokeMobile\GoSmokeMobile.projitems*{0df240a2-11b6-441b-bc4d-5bc03cf190b6}*SharedItemsImports = 4
 		GoSmokeMobileUniversal\GoSmokeMobileUniversal.Shared\GoSmokeMobileUniversal.Shared.projitems*{8559893f-104d-44c8-9ba6-f00fcb982149}*SharedItemsImports = 13
 		GoSmokeMobile\GoSmokeMobile\GoSmokeMobile.projitems*{4ca72fe8-1ae7-40cc-93f6-2dbd103f33e4}*SharedItemsImports = 4
 		GoSmokeMobileUniversal\GoSmokeMobileUniversal.Shared\GoSmokeMobileUniversal.Shared.projitems*{4ca72fe8-1ae7-40cc-93f6-2dbd103f33e4}*SharedItemsImports = 4
@@ -198,6 +203,38 @@ Global
 		{7D365E08-FC30-49B3-9367-567671890E8E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{7D365E08-FC30-49B3-9367-567671890E8E}.Release|x64.ActiveCfg = Release|Any CPU
 		{7D365E08-FC30-49B3-9367-567671890E8E}.Release|x86.ActiveCfg = Release|Any CPU
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|Any CPU.Build.0 = Debug|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|Any CPU.Deploy.0 = Debug|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|ARM.ActiveCfg = Debug|ARM
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|ARM.Build.0 = Debug|ARM
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|ARM.Deploy.0 = Debug|ARM
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|iPhone.ActiveCfg = Debug|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|iPhoneSimulator.ActiveCfg = Debug|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|Mixed Platforms.Deploy.0 = Debug|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|x64.ActiveCfg = Debug|x64
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|x64.Build.0 = Debug|x64
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|x64.Deploy.0 = Debug|x64
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|x86.ActiveCfg = Debug|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|x86.Build.0 = Debug|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Debug|x86.Deploy.0 = Debug|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|Any CPU.ActiveCfg = Release|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|ARM.ActiveCfg = Release|ARM
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|ARM.Build.0 = Release|ARM
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|ARM.Deploy.0 = Release|ARM
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|iPhone.ActiveCfg = Release|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|iPhoneSimulator.ActiveCfg = Release|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|Mixed Platforms.Build.0 = Release|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|Mixed Platforms.Deploy.0 = Release|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|x64.ActiveCfg = Release|x64
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|x64.Build.0 = Release|x64
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|x64.Deploy.0 = Release|x64
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|x86.ActiveCfg = Release|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|x86.Build.0 = Release|x86
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -208,5 +245,6 @@ Global
 		{4CA72FE8-1AE7-40CC-93F6-2DBD103F33E4} = {F96EBA8E-DE5F-467E-94B8-E2019FB72F69}
 		{86A02131-866D-4CC1-B69C-31F696BAE779} = {060E7A7D-F44E-4BB8-83A4-9EDC3AF15547}
 		{7D365E08-FC30-49B3-9367-567671890E8E} = {060E7A7D-F44E-4BB8-83A4-9EDC3AF15547}
+		{0DF240A2-11B6-441B-BC4D-5BC03CF190B6} = {AA766A60-2617-439E-8694-04D566BA37AC}
 	EndGlobalSection
 EndGlobal

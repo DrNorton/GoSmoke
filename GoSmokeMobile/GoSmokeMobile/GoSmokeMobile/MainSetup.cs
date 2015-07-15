@@ -19,7 +19,6 @@ namespace GoSmokeMobileUniversal
         public override void Initialize()
         {
         
-        
             RegisterAppStart<MainViewModel>();
             Mvx.RegisterType<IUserDataService, UserDataService>();
             Mvx.RegisterType<IApiSettings,ApiSettings>();
